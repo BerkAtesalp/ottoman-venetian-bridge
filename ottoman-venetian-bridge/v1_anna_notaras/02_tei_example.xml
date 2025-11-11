@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Anna Notaras and the Byzantine–Venetian Cultural Bridge</title>
+        <author>Berk Ateşalp</author>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Ca’ Foscari University of Venice – Digital and Public Humanities Project</publisher>
+        <date when="2025">2025</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Archivio di Stato di Venezia – Exhibition “Le Donne Benefattrici” (Women Benefactors)</title>
+            <editor>Michela Dal Borgo; Alessandra Schiavon</editor>
+            <imprint>
+              <pubPlace>Venice</pubPlace>
+              <publisher>Archivio di Stato di Venezia</publisher>
+              <date when="2014">2014</date>
+            </imprint>
+            <note>
+              Documentary exhibition highlighting women’s artistic and historical profiles in Venetian archives 
+              (15th–18th centuries), curated by <persName>Michela Dal Borgo</persName> and <persName>Alessandra Schiavon</persName>.
+              Included archival wills, notarial acts, and letters featuring figures such as 
+              <persName>Anna Notaras Paleologhina</persName>, <persName>Veronica Franco</persName>, and <persName>Morosina Morosini</persName>.
+              Presented at <placeName>Palazzo Mocenigo di San Stae</placeName>, March–June 2014.
+            </note>
+          </monogr>
+
+          <relatedItem type="context">
+            <title>Francesco Griselini Collection Donation Ceremony</title>
+            <note>
+              Official handover of <persName>Francesco Griselini</persName>’s works to the Archivio di Stato di Venezia,
+              organized by the <orgName>Knights of St. Mark Association</orgName> on 30 May 2014, 
+              followed by the exhibition “Francesco Griselini in the Documents of the Venetian State Archives,” curated by <persName>Michela Dal Borgo</persName>.
+            </note>
+          </relatedItem>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="context">
+        <head>Historical Context</head>
+        <p>Following the fall of Constantinople in 1453, Byzantine intellectuals, nobles, and clergy migrated toward Venice and other Italian centers. Among them, <persName>Anna Notaras Paleologhina</persName> stands out as a key cultural mediator between East and West.</p>
+        <p>She fostered the establishment of the Greek Orthodox community in Venice and supported the construction of <placeName>San Giorgio dei Greci</placeName>, completed in 1573 — a lasting symbol of Byzantine faith and identity within the Venetian Republic.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

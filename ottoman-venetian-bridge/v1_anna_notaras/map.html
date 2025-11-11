@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Notaras & The Byzantine–Venetian Cultural Bridge</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Georgia", serif;
+      background-color: #faf9f7;
+    }
+
+    #map {
+      height: 80%;
+      width: 100%;
+    }
+
+    #timeline {
+      height: 20%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: #f0efe9;
+      border-top: 2px solid #cfcfcf;
+      box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .event {
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    .event:hover {
+      background-color: #e2e1dc;
+      transform: scale(1.05);
+    }
+
+    .year {
+      font-weight: bold;
+      font-size: 16px;
+      color: #6b4f2d;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #3b3b3b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- TIMELINE BAR -->
+  <div id="timeline">
+    <div class="event" data-lat="41.0082" data-lng="28.9784" data-zoom="6">
+      <div class="year">1453</div>
+      <div class="label">Fall of Constantinople</div>
+    </div>
+
+    <div class="event" data-lat="45.4375" data-lng="12.3358" data-zoom="7">
+      <div class="year">1460</div>
+      <div class="label">Anna Notaras in Venice</div>
+    </div>
+
+    <div class="event" data-lat="45.434" data-lng="12.347" data-zoom="8">
+      <div class="year">1573</div>
+      <div class="label">San Giorgio dei Greci built</div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    // Initialize map
+    const map = L.map("map").setView([43, 14], 5);
+
+    // Add OpenStreetMap layer
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "© OpenStreetMap contributors"
+    }).addTo(map);
+
+    // Define key markers
+    const markers = [
+      L.marker([41.0082, 28.9784])
+        .bindPopup("<b>1453:</b> Fall of Constantinople — the Byzantine Empire collapses; migration toward Italy begins."),
+      L.marker([45.4375, 12.3358])
+        .bindPopup("<b>1460:</b> Anna Notaras Paleologhina settles in Venice, supporting the Greek Orthodox community."),
+      L.marker([45.434, 12.347])
+        .bindPopup("<b>1573:</b> Completion of San Giorgio dei Greci — symbol of Byzantine heritage in Venice.")
+    ];
+
+    markers.forEach(marker => marker.addTo(map));
+
+    // Timeline event clicks control map
+    document.querySelectorAll(".event").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lat = parseFloat(btn.getAttribute("data-lat"));
+        const lng = parseFloat(btn.getAttribute("data-lng"));
+        const zoom = parseInt(btn.getAttribute("data-zoom"));
+        map.setView([lat, lng], zoom);
+      });
+    });
+  </script>
+</body>
+</html>
