@@ -47,13 +47,19 @@ This artifact forms part of the *Ottoman–Venetian Digital Archive* as the **�
 
 ---
 
-### Citation
+### 🖼️ Image Reference
+[Gentile Bellini, *Medal of Mehmed II* (ca. 1480) — SALT Research Digital Archive](https://archives.saltresearch.org/handle/123456789/106997)  
+Courtesy of **SALT Research Archives**, used for **educational and non-commercial purposes** only.
+
+---
+
+### 📚 Citation
 > “Mehmed II Medal attributed to Gentile Bellini, ca. 1480; produced during Bellini’s stay at the Ottoman court after the 1479 peace.  
 > Used for educational and research purposes within a Digital & Public Humanities project.”
 
 ---
 
-### Files
+### 🧾 Files
 - [`source_bellini_medal.txt`](../sources/source_bellini_medal.txt)  
 - [`artifact_bellini_medal.xml`](../tei/artifact_bellini_medal.xml)  
 - [`bellini_flow_map.html`](../visuals/bellini_flow_map.html)
