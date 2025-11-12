@@ -14,9 +14,9 @@
           <licence target="https://archives.saltresearch.org/salt/info_rights.jsp">
             <p>
               This item is provided courtesy of SALT Research for non-commercial,
-              non-derivative educational and research use only. Redistribution or
-              modification of digital copies is not permitted without prior
-              permission from SALT Research.
+              non-derivative educational and research use only.
+              Redistribution or modification of digital copies is not permitted
+              without prior permission from SALT Research.
             </p>
           </licence>
         </availability>
@@ -114,3 +114,31 @@
             </location>
           </place>
         </listPlace>
+
+        <listPerson>
+          <person xml:id="p-mehmed">
+            <persName>Sultan Mehmed II</persName>
+            <note>
+              Ottoman sultan and patron of the arts; initiates invitation to Bellini.
+            </note>
+          </person>
+
+          <person xml:id="p-bellini">
+            <persName>Gentile Bellini</persName>
+            <note>
+              Venetian artist; Gold Knight and Count Palatine; active at the Ottoman
+              court ca. 1479–1481.
+            </note>
+          </person>
+        </listPerson>
+
+        <notesStmt>
+          <note type="interpretation">
+            The medal embodies cultural diplomacy: a Renaissance visual idiom serving Ottoman imperial image-making in the wake of a peace treaty. 
+            This record references SALT Research materials under non-commercial use.
+          </note>
+        </notesStmt>
+      </div>
+    </body>
+  </text>
+</TEI>
