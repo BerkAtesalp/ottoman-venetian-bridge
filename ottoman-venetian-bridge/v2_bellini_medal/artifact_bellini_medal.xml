@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Mehmed II Medal by Gentile Bellini — Cultural Diplomacy Object</title>
+        <author>Encoded by Berk Ateşalp</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Ottoman–Venetian Digital Archive (educational use)</publisher>
+        <date when="2025">2025</date>
+        <availability>
+          <p>For educational and research purposes (non-commercial). Attribution required.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          Object described from museum notes and secondary literature. 
+          Attributed to Gentile Bellini during his stay at the Ottoman court of Mehmed II after the 1479 peace. 
+          Known examples associated with the Istanbul Archaeological Museums; related Bellini portraiture is widely documented in art-historical sources.
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="objectRecord">
+        <objectDesc>
+          <objectType>Medal (cast/struck)</objectType>
+          <material>Bronze (or precious alloy; variants exist)</material>
+          <measure unit="mm" type="diameter">~70</measure>
+          <p>
+            Obverse: profile bust of Sultan Mehmed II with Latin titulature (MAGNI SOVLTANI MOHAMETI IMPERATORIS). 
+            Reverse: Latin signature by Gentile Bellini (GENTILIS BELLINVS VENETVS EQVES AVRATVS COMES PALATINVS F.) 
+            and three crowns (Graecia, Asia, Trebizond).
+          </p>
+        </objectDesc>
+
+        <profileDesc>
+          <langUsage>
+            <language ident="la">Latin</language>
+            <language ident="it">Italian (workshop conventions)</language>
+            <language ident="ota">Ottoman Turkish (historical context)</language>
+          </langUsage>
+        </profileDesc>
+
+        <listEvent>
+          <event xml:id="e1479-peace">
+            <label>Ottoman–Venetian Peace Treaty</label>
+            <date when="1479">1479</date>
+            <desc>
+              Peace ends the 1463–1479 war; conditions allow renewed diplomatic and artistic exchanges.
+            </desc>
+            <placeName ref="#venice">Venice</placeName>
+          </event>
+
+          <event xml:id="e1479-1481-bellini">
+            <label>Gentile Bellini in Constantinople</label>
+            <date notBefore="1479" notAfter="1481">1479–1481</date>
+            <desc>
+              Bellini is invited by Sultan Mehmed II to the Ottoman court to produce portraits and medals.
+            </desc>
+            <placeName ref="#istanbul">Constantinople (Istanbul)</placeName>
+          </event>
+
+          <event xml:id="e1480-medal">
+            <label>Mehmed II Medal (ca. 1480)</label>
+            <date when="1480">ca. 1480</date>
+            <desc>
+              Medal with imperial obverse and Bellini’s Latin signature on reverse; three crowns symbolize Graecia, Asia, Trebizond.
+            </desc>
+            <placeName ref="#istanbul">Constantinople (Istanbul)</placeName>
+          </event>
+
+          <event xml:id="e1481-return">
+            <label>Bellini returns to Venice</label>
+            <date when="1481">1481</date>
+            <desc>
+              After Mehmed II’s death, Bellini departs from the Ottoman court and returns to Venice.
+            </desc>
+            <placeName ref="#venice">Venice</placeName>
+          </event>
+        </listEvent>
+
+        <listPlace>
+          <place xml:id="venice">
+            <placeName>Venice</placeName>
+            <location>
+              <geo>45.4375 12.3358</geo>
+            </location>
+          </place>
+
+          <place xml:id="istanbul">
+            <placeName>Constantinople (Istanbul)</placeName>
+            <location>
+              <geo>41.0082 28.9784</geo>
+            </location>
+          </place>
+        </listPlace>
+
+        <listPerson>
+          <person xml:id="p-mehmed">
+            <persName>Sultan Mehmed II</persName>
+            <note>Ottoman sultan and patron of the arts; initiates invitation to Bellini.</note>
+          </person>
+
+          <person xml:id="p-bellini">
+            <persName>Gentile Bellini</persName>
+            <note>Venetian artist; Gold Knight and Count Palatine; active at the Ottoman court ca. 1479–1481.</note>
+          </person>
+        </listPerson>
+
+        <notesStmt>
+          <note type="interpretation">
+            The medal embodies cultural diplomacy: a Renaissance visual idiom serving Ottoman imperial image-making in the wake of a peace treaty.
+          </note>
+        </notesStmt>
+      </div>
+    </body>
+  </text>
+</TEI>
