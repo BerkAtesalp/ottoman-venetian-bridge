@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bellini’s Journey — Ottoman–Venetian Cultural Exchange</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #f7f3ea;
+      font-family: "Georgia", serif;
+      color: #3e3025;
+    }
+    #map { height: 85%; }
+    #timeline {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e9e1d3;
+      border-top: 2px solid #c5b99b;
+      font-size: 16px;
+    }
+    .year {
+      margin: 0 20px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #d6c5a0;
+      color: #3b2b1d;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .year:hover {
+      background: #bfa46a;
+      transform: scale(1.05);
+    }
+    .active {
+      background: #9c7f49;
+      color: #fff;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="timeline">
+    <div class="year" data-year="1479">1479<br><small>Peace Treaty</small></div>
+    <div class="year" data-year="1480">1479–1481<br><small>Bellini in Constantinople</small></div>
+    <div class="year" data-year="1481">1481<br><small>Return to Venice</small></div>
+  </div>
+
+  <script>
+    // Initialize map
+    var map = L.map('map').setView([42.2, 17.0], 5);
+
+    // Base layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Coordinates
+    var venice = [45.4375, 12.3358];
+    var istanbul = [41.0082, 28.9784];
+
+    // Markers
+    var markers = {
+      "1479": L.marker(venice).bindPopup("<b>1479 — Peace of Venice</b><br>End of the Ottoman–Venetian War; renewed diplomacy begins."),
+      "1480": L.marker(istanbul).bindPopup("<b>1479–1481 — Bellini in Constantinople</b><br>Creates portraits and the famous <i>Mehmed II Medal</i>."),
+      "1481": L.marker(venice).bindPopup("<b>1481 — Return to Venice</b><br>Bellini departs after Mehmed II’s death; exchanges continue through art.")
+    };
+
+    // Add route
+    var route = L.polyline([venice, istanbul, venice], {
+      color: "#7b5e2d",
+      weight: 4,
+      opacity: 0.8,
+      dashArray: "6,6"
+    }).addTo(map);
+
+    // Fit bounds initially
+    map.fitBounds(route.getBounds());
+
+    // Add all markers but keep closed
+    for (let year in markers) {
+      markers[year].addTo(map);
+    }
+
+    // Timeline interactivity
+    const years = document.querySelectorAll('.year');
+    years.forEach((el) => {
+      el.addEventListener('click', () => {
+        years.forEach((y) => y.classList.remove('active'));
+        el.classList.add('active');
+        const y = el.getAttribute('data-year');
+        const marker = markers[y];
+        if (marker) {
+          map.setView(marker.getLatLng(), 6, { animate: true });
+          marker.openPopup();
+        }
+      });
+    });
+
+    // Default highlight
+    document.querySelector('.year[data-year="1479"]').classList.add('active');
+    markers["1479"].openPopup();
+  </script>
+</body>
+</html>
