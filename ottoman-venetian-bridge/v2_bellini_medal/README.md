@@ -38,7 +38,6 @@ A map timeline illustrates Bellini’s journey:
 - **ca. 1480** – Creation of the Mehmed II Medal  
 - **1481** – Return to Venice after Mehmed’s death  
 
-➡️ Open [`bellini_flow_map.html`](../visuals/bellini_flow_map.html) to explore the interactive flow map.
 
 ---
 
@@ -59,7 +58,4 @@ Courtesy of **SALT Research Archives**, used for **educational and non-commercia
 
 ---
 
-### 🧾 Files
-- [`source_bellini_medal.txt`](../sources/source_bellini_medal.txt)  
-- [`artifact_bellini_medal.xml`](../tei/artifact_bellini_medal.xml)  
-- [`bellini_flow_map.html`](../visuals/bellini_flow_map.html)
+
