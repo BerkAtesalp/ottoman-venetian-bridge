@@ -6,18 +6,33 @@
         <title>Mehmed II Medal by Gentile Bellini — Cultural Diplomacy Object</title>
         <author>Encoded by Berk Ateşalp</author>
       </titleStmt>
+
       <publicationStmt>
         <publisher>Ottoman–Venetian Digital Archive (educational use)</publisher>
         <date when="2025">2025</date>
-        <availability>
-          <p>For educational and research purposes (non-commercial). Attribution required.</p>
+        <availability status="restricted">
+          <licence target="https://archives.saltresearch.org/salt/info_rights.jsp">
+            <p>
+              This item is provided courtesy of SALT Research for non-commercial,
+              non-derivative educational and research use only. Redistribution or
+              modification of digital copies is not permitted without prior
+              permission from SALT Research.
+            </p>
+          </licence>
         </availability>
       </publicationStmt>
+
       <sourceDesc>
         <p>
-          Object described from museum notes and secondary literature. 
-          Attributed to Gentile Bellini during his stay at the Ottoman court of Mehmed II after the 1479 peace. 
-          Known examples associated with the Istanbul Archaeological Museums; related Bellini portraiture is widely documented in art-historical sources.
+          Object record derived from SALT Research Digital Archives:
+          <ref target="https://archives.saltresearch.org/handle/123456789/106997">
+            https://archives.saltresearch.org/handle/123456789/106997
+          </ref>.
+          Attributed to Gentile Bellini, created ca. 1480 during his stay at the
+          Ottoman court of Sultan Mehmed II following the 1479 Peace Treaty between
+          the Ottoman Empire and the Republic of Venice.
+          Source metadata accessed via SALT Research under their standard
+          non-commercial use agreement.
         </p>
       </sourceDesc>
     </fileDesc>
@@ -31,9 +46,10 @@
           <material>Bronze (or precious alloy; variants exist)</material>
           <measure unit="mm" type="diameter">~70</measure>
           <p>
-            Obverse: profile bust of Sultan Mehmed II with Latin titulature (MAGNI SOVLTANI MOHAMETI IMPERATORIS). 
-            Reverse: Latin signature by Gentile Bellini (GENTILIS BELLINVS VENETVS EQVES AVRATVS COMES PALATINVS F.) 
-            and three crowns (Graecia, Asia, Trebizond).
+            Obverse: profile bust of Sultan Mehmed II with Latin titulature (MAGNI
+            SOVLTANI MOHAMETI IMPERATORIS). Reverse: Latin signature by Gentile
+            Bellini (GENTILIS BELLINVS VENETVS EQVES AVRATVS COMES PALATINVS F.)
+            and three crowns symbolizing dominion over Graecia, Asia, and Trebizond.
           </p>
         </objectDesc>
 
@@ -98,25 +114,3 @@
             </location>
           </place>
         </listPlace>
-
-        <listPerson>
-          <person xml:id="p-mehmed">
-            <persName>Sultan Mehmed II</persName>
-            <note>Ottoman sultan and patron of the arts; initiates invitation to Bellini.</note>
-          </person>
-
-          <person xml:id="p-bellini">
-            <persName>Gentile Bellini</persName>
-            <note>Venetian artist; Gold Knight and Count Palatine; active at the Ottoman court ca. 1479–1481.</note>
-          </person>
-        </listPerson>
-
-        <notesStmt>
-          <note type="interpretation">
-            The medal embodies cultural diplomacy: a Renaissance visual idiom serving Ottoman imperial image-making in the wake of a peace treaty.
-          </note>
-        </notesStmt>
-      </div>
-    </body>
-  </text>
-</TEI>
