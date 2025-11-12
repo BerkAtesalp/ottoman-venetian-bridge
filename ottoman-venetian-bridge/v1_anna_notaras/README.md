@@ -2,7 +2,7 @@
 
 **Author:** Berk Ateşalp  
 **Date:** 2025  
-**Institution:** Ca’ Foscari University of Venice – Digital and Public Humanities Project  
+
 
 ---
 
@@ -36,3 +36,4 @@ showing the cultural journey of Anna Notaras and the continuity of Byzantine tra
 **Preview Example:**
 ```html
 <iframe src="map.html" width="100%" height="500"></iframe>
+
